@@ -1,0 +1,124 @@
+\documentclass[11p]{article}
+% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[
+    backend=biber,
+    style=authoryear-ibid,
+    sorting=ynt
+]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{textcomp}
+%Källor
+\addbibresource{mall.bib}
+\graphicspath{ {./images/} }
+
+\title{Labrapprt \\ \small Fysik 1}
+\author{Magnus Silverdal }
+\date{\today}
+
+\begin{document}
+
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+
+            \Huge
+            \textbf{Laboration 5}
+
+            \vspace{0.5cm}
+            \LARGE
+            Ellära
+
+            \vspace{1.5cm}
+
+            \textbf{Alvin Högdal}
+
+            \vfill
+
+
+            Fysik 1
+
+            \vspace{0.8cm}
+
+            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+
+            \Large
+            Teknikprogrammet\\
+            NTI Gymnasiet\\
+            Umeå\\
+            \today
+
+        \end{center}
+    \end{titlepage}
+    \section{Syfte och frågeställning}
+    \paragraph{Beräkna hur stor resistansen är på ett okänt motstånd.}
+    
+    \section{Del 1}
+    \subsection{Material och metod}
+       \paragraph{Material:}
+       \begin{itemize}
+           \item Ett batteri
+            \item En multimeter
+            \item Två kablar
+            \item En kopplingsplint
+            \item Två krokodilklämmor
+            \item Ett motstånd
+       \end{itemize}
+        \paragraph{Metod:}
+        Parallellkoppla voltmätaren och ett motstånd.
+        Antäckna resultatet.
+        Serikoppla montsåndet och en ampärmätare.
+        Antäckna resultatet.
+        \begin{figure}[!h]
+        \includegraphics[width=0.8\textwidth]{../images/img2.png}
+        \caption{Exempel på en paralellkopling.}
+        \label{fig:paralell}
+        \end{figure}
+        \paragraph{}
+        \begin{figure}[!h]
+        \includegraphics[width=0.5\textwidth]{../images/img1.png}
+        \caption{Exempel på en seriekoppling.}
+        \label{fig:serie}
+        \end{figure}
+    \subsection{Resultat}
+    Voltmätaren gav ett resultat på 8,45V och ampärmätaren gav ett resultat på 0,08A\@.
+    Vi kan nu beräkna resistansen enligt Ohms lag.
+    \begin{equation}
+        R = \frac{U}{I}
+    \end{equation}
+    Detta ger resultatet $\sim$ 100\Omega.
+
+    \subsection{Analys}
+    Resultatet 100\Omega\text{ stämmer eftersom om man kollar upp vad som är markerat på resistorn så står det 100}\Omega.
+    \newpage
+    \section{Del 2}
+    \subsection{Material och metod}
+    \paragraph{Material:}
+    \begin{itemize}
+        \item Ett batteri
+        \item En multimeter
+        \item Fyra kablar
+        \item Tre kopplingsplintar
+        \item Två krokodilklämmor
+        \item Två motstånd
+    \end{itemize}
+    \paragraph{Metod:}
+    Seriekoppla två motstånd.
+    Använd multimetern för att bestämma strömen och spänningen över ett av motstånden.
+    Antäckna resultaten.
+
+    \subsection{Resultat}
+    Multimetern gav ett resultat på 4,2V och 0,04A.
+    \begin{equation}
+        R = \frac{4,2}{0,04}
+    \end{equation}
+    Detta ger resultatet $\sim$ 100\Omega.
+    \subsection{Analys}
+    Båda motstånden är samma och om man kollar upp vad som står på dom så är det 100\Omega.\text{ Detta stämmer med resultated av 100}\Omega
+
+
+\end{document}
